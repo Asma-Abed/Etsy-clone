@@ -1,0 +1,23 @@
+{
+  "name": "etsy-clone",
+  "version": "1.0.0",
+  "description": "Etsy website clone",
+  "main": "index.js",
+  "scripts": {
+    "watch": "sass sass/main.scss css/style.css -w",
+    "devserver": "live-server",
+    "start": "npm-run-all --parallel devserver watch",
+    "compile": "sass sass/main.scss css/style.comp.css",
+    "prefix": "postcss --use autoprefixer -b 'last 10 versions' css/style.comp.css -o css/style.prefix.css",
+    "compress": "sass css/style.prefix.css css/style.css --style compressed",
+    "build": "npm-run-all compile prefix compress"
+  },
+  "author": "Asma Abed",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.7",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^10.0.0",
+    "sass": "^1.53.0"
+  }
+}
