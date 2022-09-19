@@ -1,3 +1,5 @@
 Etsy website clone.
 
-Fully responsive Etsy clone using html, sass, and javascript.
+Fully responsive Etsy clone
+
+In progress...
