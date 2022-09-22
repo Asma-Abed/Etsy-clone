@@ -1,0 +1,25 @@
+.nav {
+  margin-top: 0.4rem !important;
+  padding: 0 3.6rem;
+  &__list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__link:link,
+  &__link:visited {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.3rem;
+    padding-bottom: 0.8rem;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s;
+  }
+
+  &__link:hover,
+  &__link:active {
+    border-bottom: 2px solid $black-color;
+  }
+}

@@ -13,6 +13,7 @@ html {
 body {
   font-family: "Poppins", sans-serif;
   box-sizing: border-box;
+  color: #222;
 }
 
 .header {
@@ -42,6 +43,7 @@ body {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
   border-right: 0;
+  transition: all 0.3s;
 }
 .header__search-bar input {
   font-size: 1.5rem;
@@ -98,6 +100,28 @@ body {
   width: 2.6rem;
   height: 2.6rem;
   line-height: 1.4;
+}
+
+.nav {
+  margin-top: 0.4rem !important;
+  padding: 0 3.6rem;
+}
+.nav__list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+.nav__link:link, .nav__link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+  font-size: 1.3rem;
+  padding-bottom: 0.8rem;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s;
+}
+.nav__link:hover, .nav__link:active {
+  border-bottom: 2px solid #222;
 }
 
 .container {

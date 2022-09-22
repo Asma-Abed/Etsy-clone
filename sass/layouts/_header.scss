@@ -22,14 +22,13 @@
   &__search {
     width: 100%;
     padding: 1.05rem 4.2rem 1.05rem 2rem;
-
     border: 2px solid $black-color;
     background-color: rgba(34, 34, 34, 0.05);
     border-radius: 9.6rem;
-
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
     border-right: 0;
+    transition: all 0.3s;
   }
 
   &__search-bar input {
