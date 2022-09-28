@@ -6,12 +6,13 @@
 .categories-section {
   padding-top: 2.6rem;
   position: relative;
+  margin-bottom: 6rem;
   &__heading {
-    font-size: 3.1rem;
+    font-size: 3rem;
     text-align: center;
     font-family: 'Merriweather';
     font-weight: 300;
-    letter-spacing: -1.2px;
+    letter-spacing: -1px;
     margin-bottom: 3.2rem;
   }
 }
@@ -24,4 +25,38 @@
   position: absolute;
   z-index: -1;
   top: 0;
+}
+
+.featured-section {
+  &__heading {
+    font-size: 2.8rem;
+    font-weight: 600;
+    margin-bottom: 2.4rem;
+  }
+  &__nav {
+    margin: 0 0.9rem;
+    padding: 0 7rem;
+    position: relative;
+    margin-bottom: 2.4rem;
+  }
+
+  &__nav::after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: rgba(34, 34, 34, 0.15);
+    position: absolute;
+    top: 4.2rem;
+    left: 0;
+  }
+
+  &__list {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+  }
+
+  &__title {
+    font-size: 2rem;
+  }
 }
