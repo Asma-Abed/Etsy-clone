@@ -36,6 +36,40 @@ body {
   color: #222;
 }
 
+.heading-secondary {
+  font-size: 2.6rem;
+  font-weight: 600;
+}
+
+.card__container:link, .card__container:visited {
+  text-decoration: none;
+  color: #222;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid rgba(34, 34, 34, 0.15);
+  border-radius: 1.2rem;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+.card__container:hover, .card__container:active {
+  box-shadow: 0 4px 20px rgba(34, 34, 34, 0.15);
+}
+.card__img {
+  width: 100%;
+}
+.card__title {
+  font-size: 1.9rem;
+  font-weight: 500;
+  padding: 1.2rem;
+  min-height: 7.8rem;
+  text-align: center;
+  line-height: 26px;
+  display: flex;
+  align-items: center;
+}
+
 .categories {
   list-style: none;
   display: flex;
@@ -108,6 +142,7 @@ body {
 .gallery-grid__img {
   width: 100%;
   border-radius: 5px;
+  border: 0.1px solid rgba(34, 34, 34, 0.15);
 }
 .gallery-grid__link {
   text-decoration: none;
@@ -249,7 +284,7 @@ body {
 }
 
 .featured-section {
-  margin-bottom: 6rem;
+  margin-bottom: 9rem;
 }
 .featured-section__gal-1 {
   display: none;
@@ -276,8 +311,6 @@ body {
   display: grid;
 }
 .featured-section__heading {
-  font-size: 2.8rem;
-  font-weight: 600;
   margin-bottom: 2.4rem;
 }
 .featured-section__nav {
@@ -303,6 +336,18 @@ body {
 .featured-section__title {
   font-size: 2rem;
   cursor: pointer;
+}
+
+.gifts-section {
+  margin-bottom: 9rem;
+  padding: 0 3.2rem;
+}
+.gifts-section__heading {
+  margin-bottom: 1.8rem;
+}
+.gifts-section__cards {
+  display: flex;
+  gap: 2rem;
 }
 
 /*# sourceMappingURL=style.css.map */

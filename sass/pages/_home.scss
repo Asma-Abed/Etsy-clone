@@ -28,7 +28,7 @@
 }
 
 .featured-section {
-  margin-bottom: 6rem;
+  margin-bottom: 9rem;
   &__gal-1 {
     display: none;
   }
@@ -58,8 +58,6 @@
   }
 
   &__heading {
-    font-size: 2.8rem;
-    font-weight: 600;
     margin-bottom: 2.4rem;
   }
   &__nav {
@@ -88,5 +86,19 @@
   &__title {
     font-size: 2rem;
     cursor: pointer;
+  }
+}
+
+.gifts-section {
+  margin-bottom: 9rem;
+  padding: 0 3.2rem;
+
+  &__heading {
+    margin-bottom: 1.8rem;
+  }
+
+  &__cards {
+    display: flex;
+    gap: 2rem;
   }
 }
