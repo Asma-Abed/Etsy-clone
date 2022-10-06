@@ -102,3 +102,78 @@
     gap: 2rem;
   }
 }
+
+.about-section {
+  background-color: $beige-color;
+
+  &__svg {
+    display: block;
+    height: 2.4rem;
+    width: 100%;
+    fill: $white-color;
+  }
+
+  &__container {
+    padding: 3.6rem 5.4rem;
+  }
+
+  &__header {
+    text-align: center;
+  }
+
+  &__heading {
+    font-size: 4rem;
+    font-weight: 300;
+    font-family: 'Merriweather';
+    margin-bottom: 0.6rem;
+  }
+
+  &__link:link,
+  &__link:visited {
+    display: inline-block;
+    font-size: 1.4rem;
+    color: $black-color;
+    margin-bottom: 3.6rem;
+    transition: all 0.3s;
+  }
+
+  &__link:hover,
+  &__link:active {
+    opacity: 0.5;
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5rem;
+    margin-bottom: 4.2rem;
+  }
+
+  &__content-description {
+    margin-top: 1.8rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 2.8rem;
+  }
+
+  &__cta {
+    text-align: center;
+  }
+
+  &__cta-text {
+    font-size: 1.9rem;
+    font-weight: 600;
+    margin-bottom: 1.2rem;
+  }
+
+  &__cta-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: $black-color;
+    font-size: 1.6rem;
+    font-weight: 500;
+    padding: 1rem 1.6rem;
+    border-radius: 2.4rem;
+    border: 2px solid $black-color;
+  }
+}
