@@ -1,0 +1,16 @@
+.icon {
+  width: 2.4rem;
+  height: 2.4rem;
+  fill: $white-color;
+  &--smaller {
+    width: 2rem;
+    height: 2rem;
+  }
+  &--black {
+    fill: $black-color;
+  }
+  &--bigger {
+    width: 2.8rem;
+    height: 2.8rem;
+  }
+}
