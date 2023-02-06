@@ -4,6 +4,15 @@
   justify-content: space-between;
   padding: 0 21rem;
 
+  @include respond(laptop) {
+    padding: 0 3.6rem;
+  }
+
+  @include respond(tablet) {
+    padding: 0 1.4rem;
+    gap: 2vw;
+  }
+
   &__link:link,
   &__link:visited {
     text-decoration: none;
@@ -17,6 +26,10 @@
     width: 11.4rem;
     text-align: center;
     border-bottom: 2px solid transparent;
+    @include respond(tablet) {
+      font-size: 1.3rem;
+      width: 8.6rem;
+    }
   }
 
   &__img {
@@ -25,11 +38,15 @@
     border: 1px solid rgba(34, 34, 34, 0.15);
     overflow: hidden;
     transition: all 0.3s;
+    @include respond(tablet) {
+      width: 8.6rem;
+    }
   }
 
   &__title {
     margin-bottom: 0.5rem;
     font-weight: 500;
+    flex-shrink: 0;
   }
 
   &__link:hover &__img {

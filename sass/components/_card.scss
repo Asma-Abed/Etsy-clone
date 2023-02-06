@@ -1,4 +1,15 @@
 .card {
+  @include respond(tablet) {
+    max-width: 33.333%;
+    flex-grow: 1;
+    flex-basis: 31.333%;
+  }
+  &__tablet {
+    display: none;
+    @include respond(tablet) {
+      display: block;
+    }
+  }
   &__container:link,
   &__container:visited {
     text-decoration: none;

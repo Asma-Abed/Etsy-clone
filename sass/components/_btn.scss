@@ -7,4 +7,19 @@
   padding: 1rem 1.6rem;
   border-radius: 2.4rem;
   border: 2px solid $black-color;
+
+  &__footer {
+    padding: 0.4rem 1.4rem;
+    border: 2px solid $white-color;
+  }
+
+  &__footer-container {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+  }
+  &__footer span {
+    font-size: 1.3rem;
+    color: $white-color;
+  }
 }

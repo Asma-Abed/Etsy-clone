@@ -7,6 +7,11 @@
   padding-top: 2.6rem;
   position: relative;
   margin-bottom: 6rem;
+
+  @include respond(tablet) {
+    margin-bottom: 4rem;
+  }
+
   &__heading {
     font-size: 3rem;
     text-align: center;
@@ -14,6 +19,10 @@
     font-weight: 300;
     letter-spacing: -1px;
     margin-bottom: 3.2rem;
+    @include respond(tablet) {
+      font-size: 2.4rem;
+      letter-spacing: normal;
+    }
   }
 }
 
@@ -29,6 +38,15 @@
 
 .featured-section {
   margin-bottom: 9rem;
+
+  @include respond(tablet) {
+    display: none;
+  }
+
+  @include respond(laptop) {
+    padding: 0 3.2rem;
+  }
+
   &__gal-1 {
     display: none;
   }
@@ -93,6 +111,10 @@
   margin-bottom: 9rem;
   padding: 0 3.2rem;
 
+  @include respond(tablet) {
+    margin-bottom: 6rem;
+  }
+
   &__heading {
     margin-bottom: 1.8rem;
   }
@@ -100,6 +122,10 @@
   &__cards {
     display: flex;
     gap: 2rem;
+    @include respond(tablet) {
+      flex-wrap: wrap;
+      gap: 1.6rem;
+    }
   }
 }
 
@@ -114,7 +140,7 @@
   }
 
   &__container {
-    padding: 3.6rem 5.4rem;
+    padding: 3.6rem 5.4rem 7.2rem 5.4rem;
   }
 
   &__header {
@@ -147,6 +173,15 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 5rem;
     margin-bottom: 4.2rem;
+    @include respond(tablet) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__column {
+    @include respond(tablet) {
+      text-align: center;
+    }
   }
 
   &__content-description {

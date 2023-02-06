@@ -1,6 +1,11 @@
 .nav {
   margin-top: 0.4rem !important;
   padding: 0 3.6rem;
+
+  @include respond(tablet) {
+    display: none;
+  }
+
   &__list {
     list-style: none;
     display: flex;
