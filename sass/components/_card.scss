@@ -4,6 +4,11 @@
     flex-grow: 1;
     flex-basis: 31.333%;
   }
+
+  @include respond(phone) {
+    max-width: 50%;
+    flex-basis: 48%;
+  }
   &__tablet {
     display: none;
     @include respond(tablet) {

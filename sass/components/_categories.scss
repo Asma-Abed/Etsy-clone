@@ -13,6 +13,11 @@
     gap: 2vw;
   }
 
+  @include respond(phone) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
   &__link:link,
   &__link:visited {
     text-decoration: none;
@@ -30,16 +35,35 @@
       font-size: 1.3rem;
       width: 8.6rem;
     }
+
+    @include respond(phone) {
+      width: 9.8rem;
+      justify-content: center;
+    }
   }
 
+  &__item {
+    @include respond(phone) {
+      max-width: 33.333%;
+      flex-basis: 31.333%;
+      flex-grow: 1;
+      display: flex;
+      justify-content: center;
+    }
+  }
   &__img {
     width: 11.4rem;
     border-radius: 50%;
     border: 1px solid rgba(34, 34, 34, 0.15);
     overflow: hidden;
     transition: all 0.3s;
+
     @include respond(tablet) {
       width: 8.6rem;
+    }
+
+    @include respond(phone) {
+      width: 9.8rem;
     }
   }
 

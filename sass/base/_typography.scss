@@ -2,4 +2,15 @@
   font-size: 2.6rem;
   font-weight: 600;
   line-height: 3.8rem;
+
+  @include respond(phone) {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  &--phone {
+    @include respond(phone) {
+      font-size: 2.4rem;
+    }
+  }
 }

@@ -41,6 +41,17 @@ body {
   font-weight: 600;
   line-height: 3.8rem;
 }
+@media only screen and (max-width: 40.62em) {
+  .heading-secondary {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 40.62em) {
+  .heading-secondary--phone {
+    font-size: 2.4rem;
+  }
+}
 
 .btn {
   display: inline-block;
@@ -71,6 +82,12 @@ body {
     max-width: 33.333%;
     flex-grow: 1;
     flex-basis: 31.333%;
+  }
+}
+@media only screen and (max-width: 40.62em) {
+  .card {
+    max-width: 50%;
+    flex-basis: 48%;
   }
 }
 .card__tablet {
@@ -127,6 +144,12 @@ body {
     gap: 2vw;
   }
 }
+@media only screen and (max-width: 40.62em) {
+  .categories {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
 .categories__link:link, .categories__link:visited {
   text-decoration: none;
   display: inline-block;
@@ -146,6 +169,21 @@ body {
     width: 8.6rem;
   }
 }
+@media only screen and (max-width: 40.62em) {
+  .categories__link:link, .categories__link:visited {
+    width: 9.8rem;
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 40.62em) {
+  .categories__item {
+    max-width: 33.333%;
+    flex-basis: 31.333%;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+  }
+}
 .categories__img {
   width: 11.4rem;
   border-radius: 50%;
@@ -156,6 +194,11 @@ body {
 @media only screen and (max-width: 56.25em) {
   .categories__img {
     width: 8.6rem;
+  }
+}
+@media only screen and (max-width: 40.62em) {
+  .categories__img {
+    width: 9.8rem;
   }
 }
 .categories__title {
@@ -326,9 +369,19 @@ body {
   width: 35%;
   margin: 0 auto;
 }
+@media only screen and (max-width: 75em) {
+  .footer__search-bar {
+    width: 45%;
+  }
+}
 @media only screen and (max-width: 56.25em) {
   .footer__search-bar {
     width: 60%;
+  }
+}
+@media only screen and (max-width: 40.62em) {
+  .footer__search-bar {
+    width: 90%;
   }
 }
 .footer__powered {
@@ -350,6 +403,11 @@ body {
   justify-content: center;
   gap: 1.2rem;
   padding: 1.2rem 0;
+}
+@media only screen and (max-width: 40.62em) {
+  .footer__powered-container {
+    flex-direction: column;
+  }
 }
 .footer__earth-icon {
   width: 3.6rem;
@@ -399,6 +457,11 @@ body {
     gap: 2rem;
   }
 }
+@media only screen and (max-width: 40.62em) {
+  .footer__copyright-container {
+    gap: 2.4rem;
+  }
+}
 .footer__copyright-btn {
   color: #fff;
   font-size: 1.3rem;
@@ -410,6 +473,13 @@ body {
 .footer__copyright-links-box {
   display: flex;
   gap: 2rem;
+}
+@media only screen and (max-width: 40.62em) {
+  .footer__copyright-links-box {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
 }
 .footer__copyright-text {
   color: #fff;
@@ -526,6 +596,11 @@ body {
     letter-spacing: normal;
   }
 }
+@media only screen and (max-width: 40.62em) {
+  .categories-section__heading {
+    font-size: 1.8rem;
+  }
+}
 
 .categories-section::before {
   content: "";
@@ -535,6 +610,11 @@ body {
   position: absolute;
   z-index: -1;
   top: 0;
+}
+@media only screen and (max-width: 40.62em) {
+  .categories-section::before {
+    height: 32rem;
+  }
 }
 
 .featured-section {
@@ -611,6 +691,11 @@ body {
     margin-bottom: 6rem;
   }
 }
+@media only screen and (max-width: 40.62em) {
+  .gifts-section {
+    padding: 0 1.8rem;
+  }
+}
 .gifts-section__heading {
   margin-bottom: 1.8rem;
 }
@@ -645,6 +730,11 @@ body {
   font-weight: 300;
   font-family: "Merriweather";
   margin-bottom: 0.6rem;
+}
+@media only screen and (max-width: 40.62em) {
+  .about-section__heading {
+    font-size: 3rem;
+  }
 }
 .about-section__link:link, .about-section__link:visited {
   display: inline-block;
@@ -685,6 +775,11 @@ body {
   font-size: 1.9rem;
   font-weight: 600;
   margin-bottom: 1.2rem;
+}
+@media only screen and (max-width: 40.62em) {
+  .about-section__cta-text {
+    font-size: 1.8rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

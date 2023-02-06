@@ -21,8 +21,14 @@
   &__search-bar {
     width: 35%;
     margin: 0 auto;
+    @include respond(laptop) {
+      width: 45%;
+    }
     @include respond(tablet) {
       width: 60%;
+    }
+    @include respond(phone) {
+      width: 90%;
     }
   }
 
@@ -47,6 +53,10 @@
     justify-content: center;
     gap: 1.2rem;
     padding: 1.2rem 0;
+
+    @include respond(phone) {
+      flex-direction: column;
+    }
   }
   &__earth-icon {
     width: 3.6rem;
@@ -99,6 +109,9 @@
       align-items: center;
       gap: 2rem;
     }
+    @include respond(phone) {
+      gap: 2.4rem;
+    }
   }
 
   &__copyright-btn {
@@ -113,6 +126,12 @@
   &__copyright-links-box {
     display: flex;
     gap: 2rem;
+
+    @include respond(phone) {
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+    }
   }
 
   &__copyright-text {
