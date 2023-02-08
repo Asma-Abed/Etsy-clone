@@ -40,6 +40,11 @@
       width: 9.8rem;
       justify-content: center;
     }
+
+    @include respond(smallerPhone) {
+      width: 8rem;
+      justify-content: center;
+    }
   }
 
   &__item {
@@ -64,6 +69,10 @@
 
     @include respond(phone) {
       width: 9.8rem;
+    }
+
+    @include respond(smallerPhone) {
+      width: 8rem;
     }
   }
 

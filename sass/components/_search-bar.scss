@@ -11,6 +11,10 @@
     border-bottom-right-radius: 0;
     border-right: 0;
     transition: all 0.3s;
+
+    @include respond(phone) {
+      padding: 1.05rem 0.2rem 1.05rem 2rem;
+    }
   }
 
   & input {
@@ -37,6 +41,10 @@
     cursor: pointer;
     font-size: 1.6rem;
     font-weight: 600;
+
+    @include respond(smallerPhone) {
+      padding: 0 1.8rem 0 0.4rem;
+    }
   }
 
   &__search-icon {

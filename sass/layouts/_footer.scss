@@ -30,6 +30,9 @@
     @include respond(phone) {
       width: 90%;
     }
+    @include respond(smallerPhone) {
+      width: 100%;
+    }
   }
 
   &__powered {
@@ -67,7 +70,10 @@
     font-size: 1.6rem;
     font-weight: 400;
     color: $white-color;
-    border-bottom: 2px dashed $white-color;
+    // border-bottom: 2px dashed $white-color;
+    text-decoration: underline dashed;
+    text-underline-position: under;
+    text-align: center;
   }
 
   &__nav {
@@ -149,6 +155,8 @@
     display: flex;
     gap: 2rem;
     list-style: none;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   &__copyright-link {

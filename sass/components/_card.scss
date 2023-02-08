@@ -7,8 +7,14 @@
 
   @include respond(phone) {
     max-width: 50%;
-    flex-basis: 48%;
+    flex-basis: 44%;
   }
+
+  @include respond(smallerPhone) {
+    max-width: 50%;
+    flex-basis: 41%;
+  }
+
   &__tablet {
     display: none;
     @include respond(tablet) {
