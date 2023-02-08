@@ -1,5 +1,10 @@
 .list {
   width: 25%;
+
+  @include respond(phone) {
+    width: 100%;
+  }
+
   &__container {
     list-style: none;
   }
@@ -8,11 +13,31 @@
     color: $white-color;
     font-weight: 600;
     margin-bottom: 1.2rem;
+    @include respond(phone) {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      cursor: pointer;
+    }
   }
+
+  &__icon {
+    display: none;
+    @include respond(phone) {
+      display: block;
+    }
+  }
+
   &__container {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+
+    @include respond(phone) {
+      visibility: hidden;
+      max-height: 0;
+      transition: max-height 0.3s ease-in;
+    }
   }
   &__link:link,
   &__link:visited {
@@ -21,9 +46,20 @@
     font-size: 1.3rem;
     font-weight: 400;
     transition: all 0.2s;
+
+    @include respond(phone) {
+      font-size: 1.5rem;
+    }
   }
   &__link:hover,
   &__link:active {
     text-decoration: underline;
+  }
+}
+
+.modify {
+  @include respond(phone) {
+    visibility: visible;
+    max-height: 24rem;
   }
 }

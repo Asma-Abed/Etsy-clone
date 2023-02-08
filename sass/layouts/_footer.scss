@@ -86,10 +86,19 @@
   &__nav-container {
     padding: 3.6rem 2.4rem 2.4rem 2.4rem;
     display: flex;
+
+    @include respond(phone) {
+      flex-direction: column;
+      gap: 2.8rem;
+    }
   }
 
   &__links {
     margin-top: 3.6rem;
+    @include respond(phone) {
+      text-align: center;
+      margin-top: 5.8rem;
+    }
   }
 
   &__btn-icon {
@@ -104,6 +113,9 @@
     display: flex;
     gap: 2.8rem;
     flex-wrap: wrap;
+    @include respond(phone) {
+      justify-content: center;
+    }
   }
 
   &__copyright {

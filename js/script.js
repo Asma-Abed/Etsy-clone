@@ -9,6 +9,10 @@ const mobileCloseIcon = document.querySelector('.mobile-nav__close-btn');
 const mobileNav = document.querySelector('.mobile-nav');
 const overlay = document.querySelector('.overlay');
 
+const footerListContainer = document.querySelector('.footer__nav-container');
+const footerNavHeader = document.querySelector('.list__heading');
+const footerList = document.querySelector('.list__container');
+
 // Make carousel work
 galleryTitleNav.addEventListener('click', (e) => {
   const target = e.target;
@@ -78,4 +82,19 @@ mobileCloseIcon.addEventListener('click', function () {
 overlay.addEventListener('click', function () {
   mobileNav.classList.remove('change');
   overlay.classList.remove('change');
+});
+
+// footer nav for mobile
+footerListContainer.addEventListener('click', function (e) {
+  if (e.target.classList.contains('list__heading')) {
+    e.target.nextElementSibling.classList.toggle('modify');
+  }
+  if (e.target.classList.contains('footer__nav-icon')) {
+    e.target.parentElement.nextElementSibling.classList.toggle('modify');
+  }
+  if (e.target.classList.contains('footer__use')) {
+    const parent = e.target.parentElement;
+    console.log(parent.parentElement);
+    parent.parentElement.nextElementSibling.classList.toggle('modify');
+  }
 });

@@ -18,6 +18,14 @@
     opacity: 1;
   }
 }
+@keyframes slideDown {
+  0% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}
 *,
 *::after,
 *::before {
@@ -307,6 +315,11 @@ body {
 .list {
   width: 25%;
 }
+@media only screen and (max-width: 40.62em) {
+  .list {
+    width: 100%;
+  }
+}
 .list__container {
   list-style: none;
 }
@@ -316,10 +329,33 @@ body {
   font-weight: 600;
   margin-bottom: 1.2rem;
 }
+@media only screen and (max-width: 40.62em) {
+  .list__heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+  }
+}
+.list__icon {
+  display: none;
+}
+@media only screen and (max-width: 40.62em) {
+  .list__icon {
+    display: block;
+  }
+}
 .list__container {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+}
+@media only screen and (max-width: 40.62em) {
+  .list__container {
+    visibility: hidden;
+    max-height: 0;
+    transition: max-height 0.3s ease-in;
+  }
 }
 .list__link:link, .list__link:visited {
   text-decoration: none;
@@ -328,8 +364,20 @@ body {
   font-weight: 400;
   transition: all 0.2s;
 }
+@media only screen and (max-width: 40.62em) {
+  .list__link:link, .list__link:visited {
+    font-size: 1.5rem;
+  }
+}
 .list__link:hover, .list__link:active {
   text-decoration: underline;
+}
+
+@media only screen and (max-width: 40.62em) {
+  .modify {
+    visibility: visible;
+    max-height: 24rem;
+  }
 }
 
 .search-bar {
@@ -487,8 +535,20 @@ body {
   padding: 3.6rem 2.4rem 2.4rem 2.4rem;
   display: flex;
 }
+@media only screen and (max-width: 40.62em) {
+  .footer__nav-container {
+    flex-direction: column;
+    gap: 2.8rem;
+  }
+}
 .footer__links {
   margin-top: 3.6rem;
+}
+@media only screen and (max-width: 40.62em) {
+  .footer__links {
+    text-align: center;
+    margin-top: 5.8rem;
+  }
 }
 .footer__btn-icon {
   fill: #fff;
@@ -501,6 +561,11 @@ body {
   display: flex;
   gap: 2.8rem;
   flex-wrap: wrap;
+}
+@media only screen and (max-width: 40.62em) {
+  .footer__socials {
+    justify-content: center;
+  }
 }
 .footer__copyright {
   background-color: #232347;
