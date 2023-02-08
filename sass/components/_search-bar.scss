@@ -44,6 +44,7 @@
 
     @include respond(smallerPhone) {
       padding: 0 1.8rem 0 0.4rem;
+      font-size: 1.4rem;
     }
   }
 
@@ -55,5 +56,9 @@
   &__input::placeholder {
     font-size: 1.5rem;
     font-family: 'Poppins';
+
+    @include respond(smallerPhone) {
+      font-size: 1.4rem;
+    }
   }
 }

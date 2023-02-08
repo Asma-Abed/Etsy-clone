@@ -11,7 +11,7 @@
   }
 
   @include respond(smallerPhone) {
-    max-width: 50%;
+    max-width: 47%;
     flex-basis: 41%;
   }
 
@@ -53,5 +53,9 @@
     line-height: 26px;
     display: flex;
     align-items: center;
+
+    @include respond(phone) {
+      font-size: 1.5rem;
+    }
   }
 }

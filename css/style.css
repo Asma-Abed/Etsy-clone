@@ -52,6 +52,11 @@ body {
     font-size: 2.4rem;
   }
 }
+@media only screen and (max-width: 22.12em) {
+  .heading-secondary {
+    line-height: 2.8rem;
+  }
+}
 
 .btn {
   display: inline-block;
@@ -92,7 +97,7 @@ body {
 }
 @media only screen and (max-width: 22.12em) {
   .card {
-    max-width: 50%;
+    max-width: 47%;
     flex-basis: 41%;
   }
 }
@@ -131,6 +136,11 @@ body {
   line-height: 26px;
   display: flex;
   align-items: center;
+}
+@media only screen and (max-width: 40.62em) {
+  .card__title {
+    font-size: 1.5rem;
+  }
 }
 
 .categories {
@@ -362,6 +372,7 @@ body {
 @media only screen and (max-width: 22.12em) {
   .search-bar__search-btn {
     padding: 0 1.8rem 0 0.4rem;
+    font-size: 1.4rem;
   }
 }
 .search-bar__search-icon {
@@ -371,6 +382,11 @@ body {
 .search-bar__input::placeholder {
   font-size: 1.5rem;
   font-family: "Poppins";
+}
+@media only screen and (max-width: 22.12em) {
+  .search-bar__input::placeholder {
+    font-size: 1.4rem;
+  }
 }
 
 .footer {
@@ -391,6 +407,11 @@ body {
   font-weight: 500;
   text-align: center;
   margin-bottom: 1.6rem;
+}
+@media only screen and (max-width: 22.12em) {
+  .footer__cta {
+    line-height: 2rem;
+  }
 }
 .footer__search-bar {
   width: 35%;
@@ -512,7 +533,6 @@ body {
   .footer__copyright-links-box {
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
   }
 }
 .footer__copyright-text {
@@ -530,6 +550,11 @@ body {
   list-style: none;
   flex-wrap: wrap;
   justify-content: center;
+}
+@media only screen and (max-width: 40.62em) {
+  .footer__copyright-links {
+    gap: 1rem;
+  }
 }
 .footer__copyright-link {
   font-size: 1.3rem;
