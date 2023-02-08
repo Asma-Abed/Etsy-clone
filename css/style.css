@@ -771,6 +771,11 @@ body {
   display: flex;
   justify-content: space-between;
 }
+@media only screen and (max-width: 75em) {
+  .nav__list {
+    gap: 1.6rem;
+  }
+}
 .nav__link:link, .nav__link:visited {
   display: inline-block;
   text-decoration: none;

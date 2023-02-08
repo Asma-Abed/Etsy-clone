@@ -10,6 +10,10 @@
     list-style: none;
     display: flex;
     justify-content: space-between;
+
+    @include respond(laptop) {
+      gap: 1.6rem;
+    }
   }
 
   &__link:link,
