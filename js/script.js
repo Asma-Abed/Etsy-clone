@@ -7,6 +7,7 @@ const galleryTitleNav = document.querySelector('.featured-section__list');
 const mobileMenuIcon = document.querySelector('.header__menu-icon');
 const mobileCloseIcon = document.querySelector('.mobile-nav__close-btn');
 const mobileNav = document.querySelector('.mobile-nav');
+const overlay = document.querySelector('.overlay');
 
 // Make carousel work
 galleryTitleNav.addEventListener('click', (e) => {
@@ -66,8 +67,15 @@ galleryTitleNav.addEventListener('click', (e) => {
 // Toggle mobile menu
 mobileMenuIcon.addEventListener('click', function () {
   mobileNav.classList.add('change');
+  overlay.classList.add('change');
 });
 
 mobileCloseIcon.addEventListener('click', function () {
   mobileNav.classList.remove('change');
+  overlay.classList.remove('change');
+});
+
+overlay.addEventListener('click', function () {
+  mobileNav.classList.remove('change');
+  overlay.classList.remove('change');
 });
