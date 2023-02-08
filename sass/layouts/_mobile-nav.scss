@@ -1,0 +1,53 @@
+.mobile-nav {
+  background-color: $white-color;
+  height: 100vh;
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  min-width: 35rem;
+  max-width: 40%;
+  box-shadow: 0 6px 36px rgb(34 34 34 / 33%);
+  opacity: 0;
+  visibility: hidden;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.6rem;
+  }
+
+  &__logo {
+    width: 6rem;
+    height: 3rem;
+  }
+
+  &__title {
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 600;
+    padding: 2.4rem 0;
+  }
+
+  &__list {
+    list-style: none;
+  }
+
+  &__item {
+    padding: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__item span {
+    font-size: 1.6rem;
+    font-weight: 500;
+  }
+}
+
+.change.mobile-nav {
+  @include respond(tablet) {
+    opacity: 1;
+    visibility: visible;
+  }
+}

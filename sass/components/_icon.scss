@@ -2,12 +2,17 @@
   width: 2.4rem;
   height: 2.4rem;
   fill: $white-color;
+  cursor: pointer;
   &--smaller {
     width: 2rem;
     height: 2rem;
   }
   &--black {
     fill: $black-color;
+  }
+  &--medium {
+    width: 2.6rem;
+    height: auto;
   }
   &--bigger {
     width: 2.8rem;

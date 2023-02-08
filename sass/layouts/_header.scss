@@ -4,6 +4,22 @@
   gap: 2rem;
   padding: 1.2rem 3.6rem;
 
+  &__menu-icon {
+    display: none;
+
+    @include respond(tablet) {
+      display: block;
+      cursor: pointer;
+    }
+  }
+
+  @include respond(tablet) {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1.2rem 1.8rem;
+  }
+
   &__logo-box {
     display: flex;
     align-items: center;
@@ -16,6 +32,13 @@
 
   &__search-bar {
     width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    @include respond(tablet) {
+      order: 2;
+    }
   }
 
   &__btns {

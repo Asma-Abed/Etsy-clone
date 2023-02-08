@@ -2,8 +2,11 @@ const firstGallery = document.querySelector('.featured-section__gal-1');
 const secondGallery = document.querySelector('.featured-section__gal-2');
 const thirdGallery = document.querySelector('.featured-section__gal-3');
 const forthGallery = document.querySelector('.featured-section__gal-4');
-
 const galleryTitleNav = document.querySelector('.featured-section__list');
+
+const mobileMenuIcon = document.querySelector('.header__menu-icon');
+const mobileCloseIcon = document.querySelector('.mobile-nav__close-btn');
+const mobileNav = document.querySelector('.mobile-nav');
 
 // Make carousel work
 galleryTitleNav.addEventListener('click', (e) => {
@@ -58,4 +61,13 @@ galleryTitleNav.addEventListener('click', (e) => {
     secondGallery.classList.remove('featured-section__change');
     thirdGallery.classList.remove('featured-section__change');
   }
+});
+
+// Toggle mobile menu
+mobileMenuIcon.addEventListener('click', function () {
+  mobileNav.classList.add('change');
+});
+
+mobileCloseIcon.addEventListener('click', function () {
+  mobileNav.classList.remove('change');
 });
