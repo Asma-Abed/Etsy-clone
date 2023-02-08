@@ -701,10 +701,11 @@ body {
 
 .mobile-nav {
   background-color: #fff;
-  padding: 0 1.2rem;
+  padding: 0 1.2rem 6rem 1.2rem;
   height: 100vh;
   z-index: 20;
   position: fixed;
+  overflow-y: scroll;
   top: 0;
   min-width: 35rem;
   max-width: 40%;
