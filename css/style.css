@@ -770,6 +770,7 @@ body {
   list-style: none;
   display: flex;
   justify-content: space-between;
+  position: relative;
 }
 @media only screen and (max-width: 75em) {
   .nav__list {
@@ -781,9 +782,13 @@ body {
   text-decoration: none;
   color: inherit;
   font-size: 1.3rem;
-  padding-bottom: 0.8rem;
+  width: 100%;
   border-bottom: 2px solid transparent;
+  padding-bottom: 0.8rem;
   transition: all 0.3s;
+}
+.nav__link:hover, .nav__link:active {
+  border-bottom: 2px solid #222;
 }
 
 .overlay {

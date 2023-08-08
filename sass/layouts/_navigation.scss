@@ -10,6 +10,7 @@
     list-style: none;
     display: flex;
     justify-content: space-between;
+    position: relative;
 
     @include respond(laptop) {
       gap: 1.6rem;
@@ -22,8 +23,37 @@
     text-decoration: none;
     color: inherit;
     font-size: 1.3rem;
-    padding-bottom: 0.8rem;
+    width: 100%;
     border-bottom: 2px solid transparent;
+    padding-bottom: 0.8rem;
     transition: all 0.3s;
   }
+
+  &__link:hover,
+  &__link:active {
+    border-bottom: 2px solid $black-color;
+  }
+
+  //   &__item-1:hover ~ .nav__bar {
+  //     opacity: 1;
+  //     width: 14.2rem;
+  //     left: 0;
+  //   }
+
+  //   &__item-2:hover ~ .nav__bar {
+  //     opacity: 1;
+  //     width: 10rem;
+  //     left: 20.2rem;
+  //   }
+
+  //   &__bar {
+  //     position: absolute;
+  //     background-color: $black-color;
+  //     width: 14.2rem;
+  //     top: 2.8rem;
+  //     left: 0;
+  //     height: 2px;
+  //     opacity: 0;
+  //     transition: all 0.5s ease;
+  //   }
 }
